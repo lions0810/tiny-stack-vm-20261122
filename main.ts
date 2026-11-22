@@ -1,8 +1,7 @@
 // Tiny stack VM: a from-scratch interpreter of make.fun's tiny stack ISA
-// (kit: generator/subject/ISA.md, reference generator/subject/vm.mjs).
-// 32-bit wrapping ints, 256-value data stack, 64-deep call stack, 256 words
-// of memory, input/output, ten traps with their own exit codes, a 1,000,000
-// step limit and a 65,536 byte output limit. Node 22, no dependencies.
+// (ISA.md + vm.mjs in the kit). 32-bit wrapping ints, 256-value stack,
+// 64-deep call stack, 256 words of memory, I/O, ten traps with their exact
+// exit codes, a 1,000,000 step limit and a 65,536 byte output limit.
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
